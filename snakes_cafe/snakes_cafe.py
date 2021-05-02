@@ -2,7 +2,7 @@ hello = """
 **************************************
 **    Welcome to the Snakes Cafe!   **
 **    Please see our menu below.    **
-**
+**                                  **
 ** To quit at any time, type "quit" **
 **************************************
 
@@ -38,7 +38,6 @@ Unicorn Tears
 print(hello)
 
 num_order = []
-order = 'order'
 user_order= ""
 while user_order != "quit":
    user_order= input('> ')
@@ -47,6 +46,8 @@ while user_order != "quit":
    if user_order == "quit":
        break
    if num_order.count(user_order) > 1:
-
-   print(f"** {num_order.count(user_order)} order of {user_order} have been added to your meal **")
+       order = 'orders'
+   else :
+       order = 'order'
+   print(f"** {num_order.count(user_order)} {order} of {user_order} have been added to your meal **")
    print()
