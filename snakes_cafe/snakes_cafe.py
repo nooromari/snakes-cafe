@@ -49,5 +49,4 @@ while user_order != "quit":
        order = 'orders'
    else :
        order = 'order'
-   print(f"** {num_order.count(user_order)} {order} of {user_order} have been added to your meal **")
-   print()
+   print(f"** {num_order.count(user_order)} {order} of {user_order} have been added to your meal **\n")
